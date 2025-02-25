@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "O0G8tXjrYDRnUhWR5zQs9pY+NKeLkJlLIfmYwl6eMIk=",
+  "Source": "CalendarReminderAPI",
+  "BasePath": "_content/CalendarReminderAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "CalendarReminderAPI\\wwwroot",
+      "Source": "CalendarReminderAPI",
+      "ContentRoot": "C:\\Users\\Ilkin\\Desktop\\CalendarReminderAPI\\CalendarReminderAPI\\wwwroot\\",
+      "BasePath": "_content/CalendarReminderAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Ilkin\\Desktop\\CalendarReminderAPI\\CalendarReminderAPI\\wwwroot\\index.html",
+      "SourceId": "CalendarReminderAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ilkin\\Desktop\\CalendarReminderAPI\\CalendarReminderAPI\\wwwroot\\",
+      "BasePath": "_content/CalendarReminderAPI",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\Ilkin\\Desktop\\CalendarReminderAPI\\CalendarReminderAPI\\wwwroot\\js\\reminder-notifications.js",
+      "SourceId": "CalendarReminderAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ilkin\\Desktop\\CalendarReminderAPI\\CalendarReminderAPI\\wwwroot\\",
+      "BasePath": "_content/CalendarReminderAPI",
+      "RelativePath": "js/reminder-notifications.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\reminder-notifications.js"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Ilkin\\Desktop\\CalendarReminderAPI\\CalendarReminderAPI\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Ilkin\\Desktop\\CalendarReminderAPI\\CalendarReminderAPI\\wwwroot\\js\\reminder-notifications.js",
+      "PackagePath": "staticwebassets\\js\\reminder-notifications.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CalendarReminderAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.CalendarReminderAPI.props",
+      "PackagePath": "build\\CalendarReminderAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CalendarReminderAPI.props",
+      "PackagePath": "buildMultiTargeting\\CalendarReminderAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.CalendarReminderAPI.props",
+      "PackagePath": "buildTransitive\\CalendarReminderAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

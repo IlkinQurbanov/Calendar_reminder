@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Calendar Reminders</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SignalR client library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.1/signalr.min.js"></script>
+</head>
+<body>
+    <h1>Calendar Reminders</h1>
+
+    <div>
+        <h2>Notification Test</h2>
+        <button id="testButton">Send Test Notification</button>
+        <p id="connectionStatus">Connecting...</p>
+    </div>
+
+    <script>
+        // Define the connection
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl("/notificationHub")
+            .build();
+
+        // Set up connection event handlers
+        connection.onreconnecting(() => {
+            document.getElementById('connectionStatus').textContent = 'Reconnecting...';
+        });
+
+        connection.onreconnected(() => {
+            document.getElementById('connectionStatus').textContent = 'Connected!';
+        });
+
+        connection.onclose(() => {
+            document.getElementById('connectionStatus').textContent = 'Disconnected!';
+        });
+
+        // Handle incoming notifications
+        connection.on("ReceiveNotification", (reminder) => {
+            document.getElementById('connectionStatus').textContent = 'Connected!';
+
+            if (Notification.permission === "granted") {
+                const notification = new Notification(reminder.title, {
+                    body: reminder.description,
+                    icon: "/reminder-icon.png"
+                });
+
+                notification.onclick = function () {
+                    window.focus();
+                    this.close();
+                };
+            }
+        });
+
+        // Add functionality to test button
+        document.getElementById('testButton').addEventListener('click', async function () {
+            try {
+                // Call the test method on the hub
+                await connection.invoke("SendTestNotification", "This is a test notification!");
+            } catch (err) {
+                console.error(err);
+                alert("Error sending test notification: " + err.toString());
+            }
+        });
+
+        // Start the connection
+        async function startConnection() {
+            try {
+                await connection.start();
+                console.log("SignalR connected.");
+
+                // Show connection status
+                document.getElementById('connectionStatus').textContent = 'Connected!';
+
+                // Request notification permission
+                if (Notification.permission !== "granted") {
+                    Notification.requestPermission();
+                }
+            } catch (err) {
+                console.error("Error connecting to SignalR hub:", err);
+
+                document.getElementById('connectionStatus').textContent = 'Connection failed! Retrying...';
+
+                setTimeout(startConnection, 5000);
+            }
+        }
+
+        // Start the connection
+        startConnection();
+    </script>
+</body>
+</html>
