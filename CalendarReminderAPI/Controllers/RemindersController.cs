@@ -3,6 +3,7 @@ using CalendarReminderAPI.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Web.Http.OData;
+using System.Web.Http.OData.Query;
 
 namespace CalendarReminderAPI.Controllers
 {
@@ -23,6 +24,68 @@ namespace CalendarReminderAPI.Controllers
             var currentTime = DateTime.Now;
             var watchTime = currentTime.ToString("HH:mm:ss");
             return Ok(new { Message = "Current watch time retrieved successfully.", Time = watchTime });
+        }
+
+        [HttpGet("odata-filter")]
+        [EnableQuery(AllowedQueryOptions = AllowedQueryOptions.All)]
+        public IActionResult GetRemindersOData()
+        {
+            try
+            {
+                var query = _reminderService.GetQueryableReminders();
+                return Ok(new
+                {
+                    Message = "Use OData query parameters to filter results",
+                    Data = query
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new
+                {
+                    Message = "Filtering error",
+                    Error = ex.Message
+                });
+            }
+        }
+        [HttpGet("filter")]
+        public async Task<IActionResult> GetFilteredReminders(
+            [FromQuery] string title = null,
+            [FromQuery] string description = null,
+            [FromQuery] DateTime? createdAfter = null,
+            [FromQuery] DateTime? createdBefore = null)
+        {
+            try
+            {
+                // Валидация дат
+                if (createdAfter.HasValue && createdBefore.HasValue && createdAfter > createdBefore)
+                {
+                    return BadRequest(new
+                    {
+                        Message = "Invalid date range: CreateAfter must be created."
+                    });
+                }
+
+                var result = await _reminderService.FilterRemindersAsync(
+                    title,
+                    description,
+                    createdAfter,
+                    createdBefore);
+
+                return Ok(new
+                {
+                    Message = "Filtering completed successfully",
+                    Data = result
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new
+                {
+                    Message = "Filtering error",
+                    Error = ex.Message
+                });
+            }
         }
 
         [HttpGet]

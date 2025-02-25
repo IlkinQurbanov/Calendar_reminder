@@ -145,3 +145,9 @@ C:\Users\Ilkin\Desktop\CalendarReminderAPI\CalendarReminderAPI\bin\Debug\net8.0\
 C:\Users\Ilkin\Desktop\CalendarReminderAPI\CalendarReminderAPI\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Ilkin\Desktop\CalendarReminderAPI\CalendarReminderAPI\bin\Debug\net8.0\CalendarReminderAPI.staticwebassets.runtime.json
 C:\Users\Ilkin\Desktop\CalendarReminderAPI\CalendarReminderAPI\obj\Debug\net8.0\CalendarReminderAPI.sourcelink.json
+C:\Users\Ilkin\Desktop\CalendarReminderAPI\CalendarReminderAPI\bin\Debug\net8.0\Microsoft.AspNetCore.OData.dll
+C:\Users\Ilkin\Desktop\CalendarReminderAPI\CalendarReminderAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\Ilkin\Desktop\CalendarReminderAPI\CalendarReminderAPI\bin\Debug\net8.0\Microsoft.OData.Core.dll
+C:\Users\Ilkin\Desktop\CalendarReminderAPI\CalendarReminderAPI\bin\Debug\net8.0\Microsoft.OData.Edm.dll
+C:\Users\Ilkin\Desktop\CalendarReminderAPI\CalendarReminderAPI\bin\Debug\net8.0\Microsoft.OData.ModelBuilder.dll
+C:\Users\Ilkin\Desktop\CalendarReminderAPI\CalendarReminderAPI\bin\Debug\net8.0\Microsoft.Spatial.dll

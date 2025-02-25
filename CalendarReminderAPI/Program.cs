@@ -2,6 +2,7 @@ using CalendarReminderAPI.Data;
 using CalendarReminderAPI.Services;
 using CalendarReminderApi.Hubs;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.OData;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,7 +31,14 @@ builder.Services.AddCors(options =>
 });
 
 // Add controllers and Swagger
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddOData(options => options
+        .Select()
+        .Filter()
+        .OrderBy()
+        .Expand()
+        .Count()
+        .SetMaxTop(100)); 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

@@ -15,6 +15,35 @@ namespace CalendarReminderAPI.Services
             _context = context;
         }
 
+        public IQueryable<Reminder> GetQueryableReminders()
+        {
+            return _context.Reminders.AsQueryable();
+        }
+        public async Task<IEnumerable<Reminder>> FilterRemindersAsync(
+        string title = null,
+        string description = null,
+        DateTime? createdAfter = null,
+        DateTime? createdBefore = null)
+        {
+            var query = _context.Reminders.AsQueryable();
+
+            // Фильтр по заголовку (если указан)
+            if (!string.IsNullOrWhiteSpace(title))
+                query = query.Where(r => r.Title.Contains(title));
+
+            // Фильтр по описанию (если указан)
+            if (!string.IsNullOrWhiteSpace(description))
+                query = query.Where(r => r.Description.Contains(description));
+
+            // Фильтр по дате создания
+            if (createdAfter.HasValue)
+                query = query.Where(r => r.CreatedAt >= createdAfter.Value);
+
+            if (createdBefore.HasValue)
+                query = query.Where(r => r.CreatedAt <= createdBefore.Value);
+
+            return await query.ToListAsync();
+        }
         public async Task<IEnumerable<Reminder>> GetRemindersAsync()
         {
             return await _context.Reminders.ToListAsync();

@@ -10,8 +10,10 @@
         "dependencies": {
           "CsvHelper": "33.0.1",
           "Microsoft.AspNet.WebApi.OData": "5.7.0",
+          "Microsoft.AspNetCore.OData": "8.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.13",
           "Microsoft.EntityFrameworkCore.Design": "8.0.13",
+          "Microsoft.EntityFrameworkCore.InMemory": "8.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.13",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.0",
           "Swashbuckle.AspNetCore": "6.4.0"
@@ -68,6 +70,20 @@
           "lib/net45/System.Web.Http.OData.dll": {
             "assemblyVersion": "5.7.0.0",
             "fileVersion": "5.7.30821.0"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.OData/8.0.0": {
+        "dependencies": {
+          "Microsoft.OData.Core": "7.9.0",
+          "Microsoft.OData.Edm": "7.9.0",
+          "Microsoft.OData.ModelBuilder": "1.0.6",
+          "Microsoft.Spatial": "7.9.0"
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.OData.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.0.20703"
           }
         }
       },
@@ -416,6 +432,17 @@
           }
         }
       },
+      "Microsoft.EntityFrameworkCore.InMemory/8.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.13"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/8.0.13": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.13",
@@ -523,11 +550,57 @@
         }
       },
       "Microsoft.Extensions.Primitives/8.0.0": {},
+      "Microsoft.OData.Core/7.9.0": {
+        "dependencies": {
+          "Microsoft.OData.Edm": "7.9.0",
+          "Microsoft.Spatial": "7.9.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.OData.Core.dll": {
+            "assemblyVersion": "7.9.0.0",
+            "fileVersion": "7.9.0.20512"
+          }
+        }
+      },
+      "Microsoft.OData.Edm/7.9.0": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "System.Text.Encodings.Web": "4.6.0",
+          "System.Text.Json": "4.6.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.OData.Edm.dll": {
+            "assemblyVersion": "7.9.0.0",
+            "fileVersion": "7.9.0.20512"
+          }
+        }
+      },
+      "Microsoft.OData.ModelBuilder/1.0.6": {
+        "dependencies": {
+          "Microsoft.OData.Edm": "7.9.0",
+          "Microsoft.Spatial": "7.9.0",
+          "System.ComponentModel.Annotations": "4.6.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.OData.ModelBuilder.dll": {
+            "assemblyVersion": "1.0.6.0",
+            "fileVersion": "1.0.6.20125"
+          }
+        }
+      },
       "Microsoft.OpenApi/1.2.3": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
             "assemblyVersion": "1.2.3.0",
             "fileVersion": "1.2.3.0"
+          }
+        }
+      },
+      "Microsoft.Spatial/7.9.0": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Spatial.dll": {
+            "assemblyVersion": "7.9.0.0",
+            "fileVersion": "7.9.0.20512"
           }
         }
       },
@@ -626,6 +699,7 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         }
       },
+      "System.ComponentModel.Annotations/4.6.0": {},
       "System.Composition/6.0.0": {
         "dependencies": {
           "System.Composition.AttributedModel": "6.0.0",
@@ -735,6 +809,8 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         }
       },
+      "System.Text.Encodings.Web/4.6.0": {},
+      "System.Text.Json/4.6.0": {},
       "System.Threading.Channels/6.0.0": {}
     }
   },
@@ -778,6 +854,13 @@
       "sha512": "sha512-odo0eVD9eKwwY4Kh1EeAmZwTgsaSYowzD8o9ho51Q6IriRY2fd5LyP3KFL8Cvsfx10bgoxyp68BlGU8bORVn+A==",
       "path": "microsoft.aspnet.webapi.odata/5.7.0",
       "hashPath": "microsoft.aspnet.webapi.odata.5.7.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.OData/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-h3Dlw1TPHn5OZVjlG526NFh3G3vYadIU1AfvYhi88uGRtSdZeVRb73/0ANvqOX0FbvUhEtMnUTHOmsWv5CS6sw==",
+      "path": "microsoft.aspnetcore.odata/8.0.0",
+      "hashPath": "microsoft.aspnetcore.odata.8.0.0.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
       "type": "package",
@@ -862,6 +945,13 @@
       "sha512": "sha512-lQ+ck65jBgUc4VdQFzmeE7rofw3VCW4vkLZKp3ntz1GONw8Upsvhg+bpRiMjz4HvArxoGaUZz2XQ6vg5Im0uUQ==",
       "path": "microsoft.entityframeworkcore.design/8.0.13",
       "hashPath": "microsoft.entityframeworkcore.design.8.0.13.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/pT9FOO0BxGSRscK/ekEb6TdiP3+nnyhPLElE1yuVG/QaZLaBAuM3RoywBHdIxWoFALaOS7ktXlKzuMX3khJ4A==",
+      "path": "microsoft.entityframeworkcore.inmemory/8.0.0",
+      "hashPath": "microsoft.entityframeworkcore.inmemory.8.0.0.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/8.0.13": {
       "type": "package",
@@ -954,12 +1044,40 @@
       "path": "microsoft.extensions.primitives/8.0.0",
       "hashPath": "microsoft.extensions.primitives.8.0.0.nupkg.sha512"
     },
+    "Microsoft.OData.Core/7.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pnD2w0osGjvcSsj3HenpNJie2kFyhe9KzkPdIINgxk9TxG57GMcr01TEWSDxPtJUsWBwUnYIdgp9PIztYobo7Q==",
+      "path": "microsoft.odata.core/7.9.0",
+      "hashPath": "microsoft.odata.core.7.9.0.nupkg.sha512"
+    },
+    "Microsoft.OData.Edm/7.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gEa7j3bVwJQH8QaB2pmCsrIn8XYivXUpqCp0ipHMq6+LO0oGmx1zs6a/KFyAnU97enQDDAwe5kofehq+1sHlow==",
+      "path": "microsoft.odata.edm/7.9.0",
+      "hashPath": "microsoft.odata.edm.7.9.0.nupkg.sha512"
+    },
+    "Microsoft.OData.ModelBuilder/1.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MBzmq0iqcuGuMBbfw9vkRrBAWi2doOhBI7RgaHMj/LlcWRzSzTVxqsQMoYyZo6b3uzdEbB1/VcEI8KhRrSzqkA==",
+      "path": "microsoft.odata.modelbuilder/1.0.6",
+      "hashPath": "microsoft.odata.modelbuilder.1.0.6.nupkg.sha512"
+    },
     "Microsoft.OpenApi/1.2.3": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-Nug3rO+7Kl5/SBAadzSMAVgqDlfGjJZ0GenQrLywJ84XGKO0uRqkunz5Wyl0SDwcR71bAATXvSdbdzPrYRYKGw==",
       "path": "microsoft.openapi/1.2.3",
       "hashPath": "microsoft.openapi.1.2.3.nupkg.sha512"
+    },
+    "Microsoft.Spatial/7.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AuiReHSXy5iwtwQr4ZyLCAV+Bh9mvPXyilHICVE84Pbmlu/sDy7CtK5M3EDHeaA6ki0bpHk3pNUqFCN0QCwgJA==",
+      "path": "microsoft.spatial/7.9.0",
+      "hashPath": "microsoft.spatial.7.9.0.nupkg.sha512"
     },
     "Mono.TextTemplating/2.2.1": {
       "type": "package",
@@ -1030,6 +1148,13 @@
       "sha512": "sha512-l4zZJ1WU2hqpQQHXz1rvC3etVZN+2DLmQMO79FhOTZHMn8tDRr+WU287sbomD0BETlmKDn0ygUgVy9k5xkkJdA==",
       "path": "system.collections.immutable/6.0.0",
       "hashPath": "system.collections.immutable.6.0.0.nupkg.sha512"
+    },
+    "System.ComponentModel.Annotations/4.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pOd+UhZ3X8xfwKDlgAzowUJNjp8VYVmOHZm++vCd0kq1HZ0zK3mNo2yRXjYgv7Ik/Xi43fmJfND2PLEsQSALCg==",
+      "path": "system.componentmodel.annotations/4.6.0",
+      "hashPath": "system.componentmodel.annotations.4.6.0.nupkg.sha512"
     },
     "System.Composition/6.0.0": {
       "type": "package",
@@ -1107,6 +1232,20 @@
       "sha512": "sha512-ZFCILZuOvtKPauZ/j/swhvw68ZRi9ATCfvGbk1QfydmcXBkIWecWKn/250UH7rahZ5OoDBaiAudJtPvLwzw85A==",
       "path": "system.text.encoding.codepages/6.0.0",
       "hashPath": "system.text.encoding.codepages.6.0.0.nupkg.sha512"
+    },
+    "System.Text.Encodings.Web/4.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BXgFO8Yi7ao7hVA/nklD0Hre1Bbce048ZqryGZVFifGNPuh+2jqF1i/jLJLMfFGZIzUOw+nCIeH24SQhghDSPw==",
+      "path": "system.text.encodings.web/4.6.0",
+      "hashPath": "system.text.encodings.web.4.6.0.nupkg.sha512"
+    },
+    "System.Text.Json/4.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4F8Xe+JIkVoDJ8hDAZ7HqLkjctN/6WItJIzQaifBwClC7wmoLSda/Sv2i6i1kycqDb3hWF4JCVbpAweyOKHEUA==",
+      "path": "system.text.json/4.6.0",
+      "hashPath": "system.text.json.4.6.0.nupkg.sha512"
     },
     "System.Threading.Channels/6.0.0": {
       "type": "package",
