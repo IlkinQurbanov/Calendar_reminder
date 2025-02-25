@@ -68,6 +68,10 @@ namespace CalendarReminderAPI.Controllers
                 var createdReminder = await _reminderService.CreateReminderAsync(reminder);
                 return CreatedAtAction(nameof(GetReminder), new { id = createdReminder.Id }, new { Message = "Reminder created successfully.", Data = createdReminder });
             }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(new { Message = ex.Message });
+            }
             catch (Exception ex)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, new { Message = "An error occurred while creating the reminder.", Error = ex.Message });
@@ -87,6 +91,10 @@ namespace CalendarReminderAPI.Controllers
                     return NotFound(new { Message = $"Reminder with ID {id} not found." });
 
                 return Ok(new { Message = "Reminder updated successfully.", Data = updatedReminder });
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(new { Message = ex.Message });
             }
             catch (Exception ex)
             {

@@ -27,6 +27,12 @@ namespace CalendarReminderAPI.Services
 
         public async Task<Reminder> CreateReminderAsync(Reminder reminder)
         {
+            // Check for duplicate reminders
+            if (await IsDuplicateReminderAsync(reminder.ReminderDateTime))
+            {
+                throw new InvalidOperationException("A reminder already exists for the same hour on the same day.");
+            }
+
             reminder.CreatedAt = DateTime.UtcNow;
             reminder.IsNotified = false;
 
@@ -40,6 +46,12 @@ namespace CalendarReminderAPI.Services
             var existingReminder = await _context.Reminders.FindAsync(id);
             if (existingReminder == null)
                 return null;
+
+            // Check for duplicate reminders (excluding the current reminder being updated)
+            if (await IsDuplicateReminderAsync(reminder.ReminderDateTime) && existingReminder.Id != id)
+            {
+                throw new InvalidOperationException("A reminder already exists for the same hour on the same day.");
+            }
 
             existingReminder.Title = reminder.Title;
             existingReminder.Description = reminder.Description;
@@ -71,5 +83,15 @@ namespace CalendarReminderAPI.Services
             await writer.FlushAsync();
             return memoryStream.ToArray();
         }
+        public async Task<bool> IsDuplicateReminderAsync(DateTime reminderDateTime)
+        {
+            var existingReminder = await _context.Reminders
+                .FirstOrDefaultAsync(r =>
+                    r.ReminderDateTime.Date == reminderDateTime.Date &&
+                    r.ReminderDateTime.Hour == reminderDateTime.Hour);
+
+            return existingReminder != null; 
+        }
+
     }
 }

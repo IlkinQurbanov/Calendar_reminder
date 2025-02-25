@@ -10,5 +10,6 @@ namespace CalendarReminderAPI.Services
         Task<Reminder> UpdateReminderAsync(int id, Reminder reminder);
         Task<bool> DeleteReminderAsync(int id);
         Task<byte[]> ExportToCsvAsync();
+        Task<bool> IsDuplicateReminderAsync(DateTime reminderDateTime); // New method
     }
 }

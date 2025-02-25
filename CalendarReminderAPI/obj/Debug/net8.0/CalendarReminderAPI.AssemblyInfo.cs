@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CalendarReminderAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cfb49300f36326dccc9a53dc03946a45945ac25a")]
 [assembly: System.Reflection.AssemblyProductAttribute("CalendarReminderAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CalendarReminderAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Ilkin\\Desktop\\CalendarReminderAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|c:\\users\\ilkin\\desktop\\calendarreminderapi\\calendarreminderapi\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|solutionrelative:calendarreminderapi\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|c:\\users\\ilkin\\desktop\\calendarreminderapi\\calendarreminderapi\\wwwroot\\js\\reminder-notifications.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|solutionrelative:calendarreminderapi\\wwwroot\\js\\reminder-notifications.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|c:\\users\\ilkin\\desktop\\calendarreminderapi\\calendarreminderapi\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|solutionrelative:calendarreminderapi\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|c:\\users\\ilkin\\desktop\\calendarreminderapi\\calendarreminderapi\\hubs\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|solutionrelative:calendarreminderapi\\hubs\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|c:\\users\\ilkin\\desktop\\calendarreminderapi\\calendarreminderapi\\controllers\\reminderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|solutionrelative:calendarreminderapi\\controllers\\reminderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|c:\\users\\ilkin\\desktop\\calendarreminderapi\\calendarreminderapi\\services\\reminderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,20 +15,32 @@
       "RelativeMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|solutionrelative:calendarreminderapi\\services\\ireminderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|c:\\users\\ilkin\\desktop\\calendarreminderapi\\calendarreminderapi\\data\\reminderdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|solutionrelative:calendarreminderapi\\data\\reminderdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|c:\\users\\ilkin\\desktop\\calendarreminderapi\\calendarreminderapi\\models\\reminder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|solutionrelative:calendarreminderapi\\models\\reminder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|c:\\users\\ilkin\\desktop\\calendarreminderapi\\calendarreminderapi\\hubs\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|solutionrelative:calendarreminderapi\\hubs\\notificationhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|c:\\users\\ilkin\\desktop\\calendarreminderapi\\calendarreminderapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|solutionrelative:calendarreminderapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|c:\\users\\ilkin\\desktop\\calendarreminderapi\\calendarreminderapi\\models\\reminder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|solutionrelative:calendarreminderapi\\models\\reminder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|c:\\users\\ilkin\\desktop\\calendarreminderapi\\calendarreminderapi\\wwwroot\\js\\reminder-notifications.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|solutionrelative:calendarreminderapi\\wwwroot\\js\\reminder-notifications.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|c:\\users\\ilkin\\desktop\\calendarreminderapi\\calendarreminderapi\\controllers\\reminderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|solutionrelative:calendarreminderapi\\controllers\\reminderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|c:\\users\\ilkin\\desktop\\calendarreminderapi\\calendarreminderapi\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|solutionrelative:calendarreminderapi\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|c:\\users\\ilkin\\desktop\\calendarreminderapi\\calendarreminderapi\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|solutionrelative:calendarreminderapi\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|c:\\users\\ilkin\\desktop\\calendarreminderapi\\calendarreminderapi\\data\\reminderdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|solutionrelative:calendarreminderapi\\data\\reminderdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4DE07C9-7A7B-4EA2-AF19-2D80C6EE6267}|CalendarReminderAPI\\CalendarReminderAPI.csproj|c:\\users\\ilkin\\desktop\\calendarreminderapi\\calendarreminderapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -54,11 +54,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "ReminderDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Ilkin\\Desktop\\CalendarReminderAPI\\CalendarReminderAPI\\Data\\ReminderDbContext.cs",
               "RelativeDocumentMoniker": "CalendarReminderAPI\\Data\\ReminderDbContext.cs",
@@ -66,44 +66,43 @@
               "RelativeToolTip": "CalendarReminderAPI\\Data\\ReminderDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T09:56:07.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T09:56:07.46Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\Ilkin\\Desktop\\CalendarReminderAPI\\CalendarReminderAPI\\wwwroot\\index.html",
               "RelativeDocumentMoniker": "CalendarReminderAPI\\wwwroot\\index.html",
               "ToolTip": "C:\\Users\\Ilkin\\Desktop\\CalendarReminderAPI\\CalendarReminderAPI\\wwwroot\\index.html",
               "RelativeToolTip": "CalendarReminderAPI\\wwwroot\\index.html",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAIwFsAAAAHAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFsAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-02-25T08:26:09.092Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "reminder-notifications.js",
               "DocumentMoniker": "C:\\Users\\Ilkin\\Desktop\\CalendarReminderAPI\\CalendarReminderAPI\\wwwroot\\js\\reminder-notifications.js",
               "RelativeDocumentMoniker": "CalendarReminderAPI\\wwwroot\\js\\reminder-notifications.js",
               "ToolTip": "C:\\Users\\Ilkin\\Desktop\\CalendarReminderAPI\\CalendarReminderAPI\\wwwroot\\js\\reminder-notifications.js",
               "RelativeToolTip": "CalendarReminderAPI\\wwwroot\\js\\reminder-notifications.js",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAiwC4AAAASAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-02-25T05:31:58.434Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Ilkin\\Desktop\\CalendarReminderAPI\\CalendarReminderAPI\\Program.cs",
               "RelativeDocumentMoniker": "CalendarReminderAPI\\Program.cs",
               "ToolTip": "C:\\Users\\Ilkin\\Desktop\\CalendarReminderAPI\\CalendarReminderAPI\\Program.cs",
               "RelativeToolTip": "CalendarReminderAPI\\Program.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAiwEAAAAAKAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACEAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-25T05:28:45.329Z",
               "EditorCaption": ""
@@ -118,12 +117,11 @@
               "RelativeToolTip": "CalendarReminderAPI\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-25T05:27:43.079Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T05:27:43.079Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "NotificationHub.cs",
               "DocumentMoniker": "C:\\Users\\Ilkin\\Desktop\\CalendarReminderAPI\\CalendarReminderAPI\\Hubs\\NotificationHub.cs",
               "RelativeDocumentMoniker": "CalendarReminderAPI\\Hubs\\NotificationHub.cs",
@@ -136,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "NotificationService.cs",
               "DocumentMoniker": "C:\\Users\\Ilkin\\Desktop\\CalendarReminderAPI\\CalendarReminderAPI\\Services\\NotificationService.cs",
               "RelativeDocumentMoniker": "CalendarReminderAPI\\Services\\NotificationService.cs",
@@ -144,57 +142,56 @@
               "RelativeToolTip": "CalendarReminderAPI\\Services\\NotificationService.cs",
               "ViewState": "AQIAABgAAAAAAAAAAAAiwEMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T05:25:48.791Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T05:25:48.791Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "RemindersController.cs",
               "DocumentMoniker": "C:\\Users\\Ilkin\\Desktop\\CalendarReminderAPI\\CalendarReminderAPI\\Controllers\\RemindersController.cs",
               "RelativeDocumentMoniker": "CalendarReminderAPI\\Controllers\\RemindersController.cs",
               "ToolTip": "C:\\Users\\Ilkin\\Desktop\\CalendarReminderAPI\\CalendarReminderAPI\\Controllers\\RemindersController.cs",
               "RelativeToolTip": "CalendarReminderAPI\\Controllers\\RemindersController.cs",
-              "ViewState": "AQIAAHAAAAAAAAAAAAAcwH8AAAABAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-25T05:24:51.538Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "ReminderService.cs",
               "DocumentMoniker": "C:\\Users\\Ilkin\\Desktop\\CalendarReminderAPI\\CalendarReminderAPI\\Services\\ReminderService.cs",
               "RelativeDocumentMoniker": "CalendarReminderAPI\\Services\\ReminderService.cs",
               "ToolTip": "C:\\Users\\Ilkin\\Desktop\\CalendarReminderAPI\\CalendarReminderAPI\\Services\\ReminderService.cs",
               "RelativeToolTip": "CalendarReminderAPI\\Services\\ReminderService.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAmwEoAAAABAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAgwDUAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-25T05:23:51.993Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "IReminderService.cs",
               "DocumentMoniker": "C:\\Users\\Ilkin\\Desktop\\CalendarReminderAPI\\CalendarReminderAPI\\Services\\IReminderService.cs",
               "RelativeDocumentMoniker": "CalendarReminderAPI\\Services\\IReminderService.cs",
               "ToolTip": "C:\\Users\\Ilkin\\Desktop\\CalendarReminderAPI\\CalendarReminderAPI\\Services\\IReminderService.cs",
               "RelativeToolTip": "CalendarReminderAPI\\Services\\IReminderService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-25T05:23:27.83Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "Reminder.cs",
               "DocumentMoniker": "C:\\Users\\Ilkin\\Desktop\\CalendarReminderAPI\\CalendarReminderAPI\\Models\\Reminder.cs",
               "RelativeDocumentMoniker": "CalendarReminderAPI\\Models\\Reminder.cs",
               "ToolTip": "C:\\Users\\Ilkin\\Desktop\\CalendarReminderAPI\\CalendarReminderAPI\\Models\\Reminder.cs",
               "RelativeToolTip": "CalendarReminderAPI\\Models\\Reminder.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-25T05:21:14.707Z",
               "EditorCaption": ""
